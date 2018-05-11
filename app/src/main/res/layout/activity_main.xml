@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainweixin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#eee">
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/main_bottom"
+            android:orientation="vertical">
+
+            <com.amap.api.maps.MapView
+                android:id="@+id/map"
+                android:layout_above="@id/main_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/basicmap"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:background="@drawable/btn_map_poi"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="标准地图"/>
+        <Button
+            android:id="@+id/rsmap"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:background="@drawable/btn_map_poi"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="卫星地图"/>
+        <Button
+            android:id="@+id/nightmap"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_map_poi"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="夜间模式"/>
+        <Button
+            android:id="@+id/navimap"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_map_poi"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="导航模式"/>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fdfdfd"
+            android:fadeScrollbars="true"
+            android:scrollbars="vertical"
+            android:visibility="invisible"
+           />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@drawable/bottom_bar"
+        >
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="2dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/img_dingwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/img_dingwei"
+                    android:textColor="#ffffff"
+                     android:textSize="35sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实时定位"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/img_guiji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/img_guiji"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="轨迹跟踪"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/img_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/img_settings"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注销"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+

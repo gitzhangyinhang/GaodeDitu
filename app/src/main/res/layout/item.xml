@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 车牌号 -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:id="@+id/PlateID"
+        android:textColor="@color/text1"
+        android:layout_weight="1"
+        />
+    <!-- 终端号 -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:id="@+id/Device"
+        android:textColor="@color/text1"
+        android:layout_weight="1"
+        />
+    <!-- 当前状态 -->
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:textColor="@color/text1"
+        />
+
+    <!-- 行驶速度 -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:id="@+id/Speed"
+        android:textColor="@color/text1"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
